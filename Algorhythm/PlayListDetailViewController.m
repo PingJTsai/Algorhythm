@@ -1,27 +1,31 @@
 //
-//  ViewController.m
+//  PlayListDetailViewController.m
 //  Algorhythm
 //
 //  Created by Ping-jung Tsai on 3/1/15.
 //  Copyright (c) 2015 Ping-jung Tsai. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "PlayListDetailViewController.h"
 
-@interface ViewController ()
+@interface PlayListDetailViewController ()
 
 @end
 
-@implementation ViewController
+@implementation PlayListDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view.
+    self.buttonPressLabel.text = self.segueText;
+    NSLog(@"%@", self.segueText);
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 @end
