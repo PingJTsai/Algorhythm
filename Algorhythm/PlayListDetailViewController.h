@@ -8,9 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PlayListDetailViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *buttonPressLabel;
+//include playlist class
+@class PlayList;
 
-@property (strong, nonatomic) NSString *segueText;
+@interface PlayListDetailViewController : UIViewController
+
+@property (strong, nonatomic) PlayList *playlist;
+@property (weak, nonatomic) IBOutlet UIImageView *playlistCoverImage;
+@property (weak, nonatomic) IBOutlet UILabel *playlistTitle;
+@property (weak, nonatomic) IBOutlet UILabel *playlistDescription;
+
+@property (weak, nonatomic) IBOutlet UILabel *playlistArtist0;
+@property (weak, nonatomic) IBOutlet UILabel *playlistArtist1;
+@property (weak, nonatomic) IBOutlet UILabel *playlistArtist2;
+
+
 
 @end

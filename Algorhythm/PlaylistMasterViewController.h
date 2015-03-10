@@ -10,7 +10,9 @@
 
 @interface PlaylistMasterViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIButton *aButton;
+@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *playlistImageViews;
+
+
 
 @end
 
